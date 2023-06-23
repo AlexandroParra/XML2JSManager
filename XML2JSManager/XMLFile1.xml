@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns0="http://xtravelsystem.com/v1_0rc1/hotel/types">
+	<env:Body>
+		<ns0:availableHotelsByMultiQueryV22Response>
+			<result xsi:type="ns0:AvailabilityMultiRSV22">
+				<fromRow>0</fromRow>
+				<numRows>10</numRows>
+				<totalRows>1</totalRows>
+				<availableHotels>
+					<establishment>
+						<address>
+							<address>Urbanizacion Lago de Bristol 1 </address>
+							<cityCode>84</cityCode>
+							<cityName>CORRALEJO</cityName>
+							<countryCode>ES</countryCode>
+							<countryName>ESPAÑA</countryName>
+							<districtCode xsi:nil="1"/>
+							<districtName xsi:nil="1"/>
+							<email xsi:nil="1"/>
+							<fax>+34928866349</fax>
+							<name xsi:nil="1"/>
+							<stateCode>262</stateCode>
+							<stateName>FUERTEVENTURA</stateName>
+							<telephone>+34928867020</telephone>
+							<zipCode>35560</zipCode>
+						</address>
+						<categoryCode>3</categoryCode>
+						<categoryName>***</categoryName>
+						<id>339</id>
+						<imageUrl xsi:nil="1"/>
+						<latitude>28.74361</latitude>
+						<longitude>-13.869551</longitude>
+						<name>HESPERIA BRISTOL PLAYA</name>
+						<shortDescription xsi:nil="1"/>
+						<weight>0</weight>
+					</establishment>
+					<moreCombinations>false</moreCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>656.13</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.67%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>656.13</price>
+								<pricePerPaxAndNight>21.87</pricePerPaxAndNight>
+								<pricePerRoomAndNight>109.36</pricePerRoomAndNight>
+								<typeCode>42JNDLU03</typeCode>
+								<typeName>APARTMENT CAPACITY 5</typeName>
+								<description>APARTAMENTO CAPACIDAD 5. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JNDLU03:RO:STD::hLQXMDMjAyMzExMDl8MjAyMzExMTV8V3w1M3wyODEwfEFQVC5DNS0xfENHLUJBUiBST3xST3x8MX4yfjN8MTJ+MTJ+MTZ8TkAwNn5+MjAwMmZhfi0xODkxOTAxMTE4fk5+fn5OT1J+MTk2NTg2MkZCOEYxNDdGMTY4NzUzMDIxMDQ4NjAwUFdFUzAwMDAwMDEwMDAwMDAwMDA3MjAyMjdkIyZAJiM3OTg3MTc=</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JNDLU03</typeCode>
+							<typeName>APARTMENT CAPACITY 5</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>811.06</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.67%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>811.06</price>
+								<pricePerPaxAndNight>27.04</pricePerPaxAndNight>
+								<pricePerRoomAndNight>135.18</pricePerRoomAndNight>
+								<typeCode>42JNDLUO3</typeCode>
+								<typeName>APARTMENT CAPACITY 6</typeName>
+								<description>APARTAMENTO CAPACIDAD 6. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JNDLUO3:RO:STD::LXEWyHMjAyMzExMDl8MjAyMzExMTV8V3w1M3wyODEwfEFQVC5DNnxDRy1CQVIgUk98Uk98fDF+Mn4zfDEyfjEyfjE2fE5AMDZ+fjIwMDNhZX4tMTE1NjIzMzQzOH5Ofn5+Tk9SfjE5NjU4NjJGQjhGMTQ3RjE2ODc1MzAyMTA0ODYwMFBXRVMwMDAwMDAxMDAwMDAwMDAwNzIyYzMxMyMmQCYjNzk4NzE3</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JNDLUO3</typeCode>
+							<typeName>APARTMENT CAPACITY 6</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+				</availableHotels>
+				<pricingAgencyCode>290182</pricingAgencyCode>
+			</result>
+		</ns0:availableHotelsByMultiQueryV22Response>
+	</env:Body>
+</env:Envelope>
