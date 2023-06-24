@@ -11,7 +11,7 @@ namespace XML2JSManager
         private TreeView _treeView;
         private TextBox _textBox;
         private XDocument _xmlDocument;
-        private Stack<KeyValuePair<string, string>> _stack;
+        private Stack<string> _stack;
 
         public JavaScriptGenerator(TreeView treeView, string xmlContent, TextBox txtOut)
         {
@@ -21,7 +21,7 @@ namespace XML2JSManager
             // Asignar el evento NodeMouseClick después de cargar los nodos en el TreeView
             _treeView.NodeMouseClick += TreeView_NodeMouseClick;
 
-            _stack = new Stack<KeyValuePair<string, string>>();
+            _stack = new Stack<string>();
         }
 
         private void TreeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -39,19 +39,18 @@ namespace XML2JSManager
             WriteStackContent(_stack, _textBox);
         }
 
-        private static void WriteStackContent(Stack<KeyValuePair<string, string>> stack, TextBox txtOut)
+        private static void WriteStackContent(Stack<string> stack, TextBox txtOut)
         {
-            foreach(KeyValuePair<string, string> item in stack)
+            foreach(var item in stack)
             {
-                txtOut.Text += "Nombre : " + item.Key + " Valor: " + item.Value + "\r\n";
+                txtOut.Text += $"Nombre: {item} \r\n";
             }
         }
 
-        private static Stack<KeyValuePair<string, string>> LoadStack(TreeNode treeNode, Stack<KeyValuePair<string, string>> stack )
+        private static Stack<string> LoadStack(TreeNode treeNode, Stack<string> stack )
         {
-            // Agregamos el contenido del nodo a la pila
-            var nodeValues = new KeyValuePair<string, string>(treeNode.toString(), treeNode.toString());
-            stack.Push(nodeValues);                
+            // Agregamos el contenido del nodo a la pila            
+            stack.Push(treeNode.Text);                
 
             // Verificar si el nodo tiene un nodo padre
             if (treeNode.Parent != null)

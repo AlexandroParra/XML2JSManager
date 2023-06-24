@@ -112,7 +112,7 @@ namespace XML2JSManager
                 if (childNode.NodeType == XmlNodeType.Element)
                 {
                     // Si el nodo es un elemento XML, crea un nuevo TreeNode con el nombre del nodo y el InnerText
-                    newNode = new TreeNode($"[{childNode.Name}]: {childNode.InnerText}");
+                    newNode = new TreeNode(childNode.Name);
                 }
                 else if (childNode.NodeType == XmlNodeType.Text)
                 {
