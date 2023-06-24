@@ -90,6 +90,9 @@ namespace XML2JSManager
 
                     // Llamar a un método recursivo para agregar los nodos al TreeView
                     AddXmlNodesToTreeView(xmlDoc.DocumentElement, treeView.Nodes);
+
+                    // Expandimos los nodos del árbol.
+                    treeView.ExpandAll();
                 }
                 catch (XmlException ex)
                 {
@@ -102,16 +105,29 @@ namespace XML2JSManager
         // Método recursivo para agregar los nodos al TreeView
         private void AddXmlNodesToTreeView(XmlNode xmlNode, TreeNodeCollection treeNodes)
         {
-            // Recorrer los nodos hijos del xmlNode
             foreach (XmlNode childNode in xmlNode.ChildNodes)
             {
-                // Crear un nuevo TreeNode para el nodo hijo
-                TreeNode newNode = new TreeNode(childNode.Name);
+                TreeNode newNode;
 
-                // Agregar el nuevo TreeNode a la colección de nodos del TreeView
+                if (childNode.NodeType == XmlNodeType.Element)
+                {
+                    // Si el nodo es un elemento XML, crea un nuevo TreeNode con el nombre del nodo y el InnerText
+                    newNode = new TreeNode($"[{childNode.Name}]: {childNode.InnerText}");
+                }
+                else if (childNode.NodeType == XmlNodeType.Text)
+                {
+                    // Si el nodo es un nodo de texto, crea un nuevo TreeNode con el valor del texto
+                    newNode = new TreeNode(childNode.InnerText);
+                }
+                else
+                {
+                    // Si el nodo no es un elemento ni un nodo de texto, crea un nuevo TreeNode con el nombre del nodo
+                    newNode = new TreeNode(childNode.Name);
+                }
+
                 treeNodes.Add(newNode);
 
-                // Llamar recursivamente al método para agregar los nodos hijos del nodo actual
+                // Llama recursivamente al método para agregar los nodos hijos del nodo actual
                 AddXmlNodesToTreeView(childNode, newNode.Nodes);
             }
         }

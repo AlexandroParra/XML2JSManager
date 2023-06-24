@@ -11,21 +11,17 @@ namespace XML2JSManager
         private TreeView _treeView;
         private TextBox _textBox;
         private XDocument _xmlDocument;
+        private Stack<KeyValuePair<string, string>> _stack;
 
         public JavaScriptGenerator(TreeView treeView, string xmlContent, TextBox txtOut)
         {
             _treeView = treeView;
             _textBox = txtOut;
-            _xmlDocument = new XDocument();
-
-            // Cargar el XML en el documento
-            _xmlDocument = XDocument.Parse(xmlContent);
-
-            // Agregar los nodos al TreeView
-            LoadTreeViewFromXml();
 
             // Asignar el evento NodeMouseClick después de cargar los nodos en el TreeView
             _treeView.NodeMouseClick += TreeView_NodeMouseClick;
+
+            _stack = new Stack<KeyValuePair<string, string>>();
         }
 
         private void TreeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -33,56 +29,38 @@ namespace XML2JSManager
             // Obtener el nodo seleccionado
             TreeNode selectedNode = e.Node;
 
-            // Generar el código JavaScript para mostrar el contenido del nodo seleccionado
-            GenerateJavaScriptCode(selectedNode, _textBox);
+            // Limpiamos la pila.
+            _stack.Clear();
+
+            // Cargamos la pila con el árbol padre del nodo seleccionado.
+            _stack = LoadStack(selectedNode, _stack);
+
+            // Volcamos el contenido de la pila en el TextBox.
+            WriteStackContent(_stack, _textBox);
         }
 
-        private void LoadTreeViewFromXml()
+        private static void WriteStackContent(Stack<KeyValuePair<string, string>> stack, TextBox txtOut)
         {
-            // Limpiar el TreeView antes de cargar nuevos nodos
-            _treeView.Nodes.Clear();
-
-            // Agregar el nodo raíz al TreeView
-            _treeView.Nodes.Add(new TreeNode(_xmlDocument.Root.Name.LocalName) { Tag = _xmlDocument.Root });
-
-            // Llamar al método recursivo para agregar los nodos hijos
-            AddXmlNodesToTreeView(_xmlDocument.Root, _treeView.Nodes[0].Nodes);
-        }
-
-        private void AddXmlNodesToTreeView(XElement xmlNode, TreeNodeCollection treeNodes)
-        {
-            foreach (XElement childNode in xmlNode.Elements())
+            foreach(KeyValuePair<string, string> item in stack)
             {
-                // Crear un nuevo TreeNode para el nodo hijo
-                TreeNode newNode = new TreeNode(childNode.Name.LocalName) { Tag = childNode };
-
-                // Agregar el nuevo TreeNode a la colección de nodos del TreeView
-                treeNodes.Add(newNode);
-
-                // Llamar recursivamente al método para agregar los nodos hijos del nodo actual
-                AddXmlNodesToTreeView(childNode, newNode.Nodes);
+                txtOut.Text += "Nombre : " + item.Key + " Valor: " + item.Value + "\r\n";
             }
         }
 
-        private void GenerateJavaScriptCode(TreeNode treeNode, TextBox textBox)
+        private static Stack<KeyValuePair<string, string>> LoadStack(TreeNode treeNode, Stack<KeyValuePair<string, string>> stack )
         {
-            // Obtener el nodo XML asociado al TreeNode actual
-            XmlNode xmlNode = (XmlNode)treeNode.Tag;
-
-            // Verificar si el nodo no es nulo, es un elemento (tag) y tiene texto
-            if (xmlNode != null && xmlNode.NodeType == XmlNodeType.Element && !string.IsNullOrWhiteSpace(xmlNode.InnerText))
-            {
-                // Generar el código JavaScript para mostrar el valor del nodo y su nombre
-                string jsCode = $"textBox.Text += '{xmlNode.Name}: ' + {GetJavaScriptValue(xmlNode.InnerText)} + Environment.NewLine;";
-                textBox.Text += jsCode;
-            }
+            // Agregamos el contenido del nodo a la pila
+            var nodeValues = new KeyValuePair<string, string>(treeNode.toString(), treeNode.toString());
+            stack.Push(nodeValues);                
 
             // Verificar si el nodo tiene un nodo padre
             if (treeNode.Parent != null)
             {
-                // Llamar recursivamente a la función para generar el código JavaScript para el nodo padre
-                GenerateJavaScriptCode(treeNode.Parent, textBox);
+                // Llamar recursivamente a la función para cargar la pila desde el nodo seleccionado hasta el nodo raiz.
+                stack = LoadStack(treeNode.Parent, stack);
             }
+
+            return stack;
         }
 
 
