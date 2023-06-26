@@ -30,14 +30,16 @@
         {
             panel1 = new Panel();
             panel2 = new Panel();
+            btnEnvVariables = new Button();
             btnLoadTreeView = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             txtXML = new TextBox();
             tabPage2 = new TabPage();
+            treeView = new TreeView();
             tabPage3 = new TabPage();
             txtJavaScript = new TextBox();
-            treeView = new TreeView();
+            btnContent = new Button();
             panel2.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -55,12 +57,24 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(btnContent);
+            panel2.Controls.Add(btnEnvVariables);
             panel2.Controls.Add(btnLoadTreeView);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(1022, 27);
             panel2.Name = "panel2";
             panel2.Size = new Size(111, 820);
             panel2.TabIndex = 1;
+            // 
+            // btnEnvVariables
+            // 
+            btnEnvVariables.Location = new Point(15, 215);
+            btnEnvVariables.Name = "btnEnvVariables";
+            btnEnvVariables.Size = new Size(75, 82);
+            btnEnvVariables.TabIndex = 1;
+            btnEnvVariables.Text = "Environment Variables";
+            btnEnvVariables.UseVisualStyleBackColor = true;
+            btnEnvVariables.Click += btnEnvVariables_Click;
             // 
             // btnLoadTreeView
             // 
@@ -104,7 +118,6 @@
             txtXML.Name = "txtXML";
             txtXML.Size = new Size(1000, 776);
             txtXML.TabIndex = 0;
-            txtXML.TextChanged += txtXML_TextChanged;
             // 
             // tabPage2
             // 
@@ -116,6 +129,13 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Tree";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // treeView
+            // 
+            treeView.Location = new Point(8, 6);
+            treeView.Name = "treeView";
+            treeView.Size = new Size(1000, 776);
+            treeView.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -137,14 +157,17 @@
             txtJavaScript.Size = new Size(1003, 698);
             txtJavaScript.TabIndex = 0;
             // 
-            // treeView
+            // btnContent
             // 
-            treeView.Location = new Point(8, 6);
-            treeView.Name = "treeView";
-            treeView.Size = new Size(1000, 776);
-            treeView.TabIndex = 0;
+            btnContent.Location = new Point(15, 391);
+            btnContent.Name = "btnContent";
+            btnContent.Size = new Size(75, 82);
+            btnContent.TabIndex = 2;
+            btnContent.Text = "Variable Content";
+            btnContent.UseVisualStyleBackColor = true;
+            btnContent.Click += btnContent_Click;
             // 
-            // Form1
+            // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -152,9 +175,8 @@
             Controls.Add(tabControl1);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "Form1";
+            Name = "frmMain";
             Text = "XML2JavaScript";
-            Load += Form1_Load;
             panel2.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
@@ -177,5 +199,7 @@
         private TextBox txtJavaScript;
         private Button btnLoadTreeView;
         private TreeView treeView;
+        private Button btnEnvVariables;
+        private Button btnContent;
     }
 }

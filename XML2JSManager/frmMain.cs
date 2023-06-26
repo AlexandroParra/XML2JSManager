@@ -6,8 +6,6 @@ namespace XML2JSManager
 {
     public partial class frmMain : Form
     {
-        private JavaScriptGenerator _jsGenerator;
-
         private XMLManager _xmlManager;
 
         private XmlDocument _xmlDocument;
@@ -15,10 +13,10 @@ namespace XML2JSManager
         public frmMain()
         {
             InitializeComponent();
+            txtXML.MaxLength = 1000000;
             txtXML.MouseWheel += richTextBox_MouseWheel;
             txtXML.ScrollBars = ScrollBars.Both;
         }
-
 
         private void richTextBox_MouseWheel(object sender, MouseEventArgs e)
         {
@@ -53,16 +51,6 @@ namespace XML2JSManager
             public static extern int PostMessage(IntPtr hWnd, int msg, int wParam, int lParam);
         }
 
-        private void txtXML_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLoadTreeView_Click(object sender, EventArgs e)
         {
             LoadTreeViewFromXMLTextBox();
@@ -76,9 +64,9 @@ namespace XML2JSManager
                 string xmlContent = txtXML.Text;
 
                 try
-                {                
+                {
                     // Cargar el XML desde el contenido del TextBox
-                    _xmlManager = new XMLManager(xmlContent);                    
+                    _xmlManager = new XMLManager(xmlContent);
 
                     // Aplicamos el formato
                     txtXML.Text = XMLManager.GetFormattedXML(_xmlManager.Document);
@@ -88,9 +76,6 @@ namespace XML2JSManager
 
                     // Llamar a un método recursivo para agregar los nodos al TreeView
                     XmlToTreeView.AddXmlNodesToTreeView(_xmlManager.Document, treeView.Nodes, _xmlManager);
-
-                    // Crear una instancia de JavaScriptGenerator y pasarle el TreeView
-                    _jsGenerator = new JavaScriptGenerator(treeView, txtJavaScript);
 
                     // Expandimos los nodos del árbol.
                     treeView.ExpandAll();
@@ -103,5 +88,16 @@ namespace XML2JSManager
             }
         }
 
+        private void btnEnvVariables_Click(object sender, EventArgs e)
+        {
+            if (treeView.SelectedNode != null)
+                txtJavaScript.Text = JavaScriptGenerator.GetEnvironmentVariable(treeView.SelectedNode);
+        }
+
+        private void btnContent_Click(object sender, EventArgs e)
+        {
+            if (treeView.SelectedNode != null)
+                txtJavaScript.Text = JavaScriptGenerator.GetVariableContent(treeView.SelectedNode);
+        }
     }
 }
