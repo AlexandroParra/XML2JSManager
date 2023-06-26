@@ -8,10 +8,15 @@ namespace XML2JSManager
     {
         private JavaScriptGenerator _jsGenerator;
 
+        private XMLManager _xmlManager;
+
+        private XmlDocument _xmlDocument;
+
         public frmMain()
         {
             InitializeComponent();
             txtXML.MouseWheel += richTextBox_MouseWheel;
+            txtXML.ScrollBars = ScrollBars.Both;
         }
 
 
@@ -70,26 +75,22 @@ namespace XML2JSManager
                 // Obtener el contenido XML del TextBox
                 string xmlContent = txtXML.Text;
 
-                // Crear un nuevo documento XmlDocument
-                XmlDocument xmlDoc = new XmlDocument();
-
                 try
-                {
+                {                
                     // Cargar el XML desde el contenido del TextBox
-                    xmlDoc.LoadXml(xmlContent);
-
-                    // Crear una instancia de JavaScriptGenerator y pasarle el TreeView
-                    _jsGenerator = new JavaScriptGenerator(treeView, txtXML.Text, txtJavaScript);
-
+                    _xmlManager = new XMLManager(xmlContent);                    
 
                     // Aplicamos el formato
-                    txtXML.Text = GetFormattedXML(xmlDoc);
+                    txtXML.Text = XMLManager.GetFormattedXML(_xmlManager.Document);
 
                     // Limpiar el TreeView antes de cargar nuevos nodos
                     treeView.Nodes.Clear();
 
                     // Llamar a un método recursivo para agregar los nodos al TreeView
-                    AddXmlNodesToTreeView(xmlDoc.DocumentElement, treeView.Nodes);
+                    XmlToTreeView.AddXmlNodesToTreeView(_xmlManager.Document, treeView.Nodes, _xmlManager);
+
+                    // Crear una instancia de JavaScriptGenerator y pasarle el TreeView
+                    _jsGenerator = new JavaScriptGenerator(treeView, txtJavaScript);
 
                     // Expandimos los nodos del árbol.
                     treeView.ExpandAll();
@@ -97,62 +98,10 @@ namespace XML2JSManager
                 catch (XmlException ex)
                 {
                     // Se produjo una excepción al cargar el XML, lo que indica que no está bien formado
-                    Console.WriteLine("El XML no está bien formado. Error: " + ex.Message);
+                    MessageBox.Show("El XML no está bien formado. Error: " + ex.Message);
                 }
             }
         }
 
-        // Método recursivo para agregar los nodos al TreeView
-        private void AddXmlNodesToTreeView(XmlNode xmlNode, TreeNodeCollection treeNodes)
-        {
-            foreach (XmlNode childNode in xmlNode.ChildNodes)
-            {
-                TreeNode newNode;
-
-                if (childNode.NodeType == XmlNodeType.Element)
-                {
-                    // Si el nodo es un elemento XML, crea un nuevo TreeNode con el nombre del nodo y el InnerText
-                    newNode = new TreeNode(childNode.Name);
-                }
-                else if (childNode.NodeType == XmlNodeType.Text)
-                {
-                    // Si el nodo es un nodo de texto, crea un nuevo TreeNode con el valor del texto
-                    newNode = new TreeNode(childNode.InnerText);
-                }
-                else
-                {
-                    // Si el nodo no es un elemento ni un nodo de texto, crea un nuevo TreeNode con el nombre del nodo
-                    newNode = new TreeNode(childNode.Name);
-                }
-
-                treeNodes.Add(newNode);
-
-                // Llama recursivamente al método para agregar los nodos hijos del nodo actual
-                AddXmlNodesToTreeView(childNode, newNode.Nodes);
-            }
-        }
-
-        private string GetFormattedXML(XmlDocument xmlDoc)
-        {
-            // Crear los ajustes de formato para el XML
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true; // Habilitar la indentación
-            settings.IndentChars = "  "; // Establecer el carácter de indentación (puedes utilizar espacios, tabulaciones, etc.)
-            settings.NewLineChars = "\r\n"; // Establecer los caracteres de nueva línea (puedes ajustarlos según tus preferencias)
-
-            // Crear un StringWriter para almacenar el XML formateado
-            using (StringWriter sw = new StringWriter())
-            {
-                // Crear un XmlWriter utilizando los ajustes de formato y el StringWriter
-                using (XmlWriter writer = XmlWriter.Create(sw, settings))
-                {
-                    // Escribir el documento XML formateado en el XmlWriter
-                    xmlDoc.WriteTo(writer);
-                }
-
-                // Obtener el XML formateado como una cadena
-                return sw.ToString();
-            }
-        }
     }
 }

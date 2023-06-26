@@ -8,12 +8,28 @@ namespace XML2JSManager
 {
     public class JavaScriptGenerator
     {
+
+        private const string Cabecera =
+            """
+            /***************************************************************
+            * Script for XML Response
+            ***************************************************************/
+            function GetValidReference(objeto, propiedad) {
+                var valor;                           
+                if (objeto[propiedad] && Array.isArray(objeto[propiedad]) && objeto[propiedad].length > 0) {valor = objeto[propiedad][0];}
+                if (!valor && objeto[propiedad]) {valor = objeto[propiedad];}
+                return valor;
+            }
+            var response = xml2Json(responseBody);
+            <VariablePath>            
+            """;
+
+
         private TreeView _treeView;
         private TextBox _textBox;
-        private XDocument _xmlDocument;
-        private Stack<string> _stack;
+        private Stack<(string name, bool isArray)> _stack;
 
-        public JavaScriptGenerator(TreeView treeView, string xmlContent, TextBox txtOut)
+        public JavaScriptGenerator(TreeView treeView, TextBox txtOut)
         {
             _treeView = treeView;
             _textBox = txtOut;
@@ -21,7 +37,15 @@ namespace XML2JSManager
             // Asignar el evento NodeMouseClick después de cargar los nodos en el TreeView
             _treeView.NodeMouseClick += TreeView_NodeMouseClick;
 
-            _stack = new Stack<string>();
+            _stack = new Stack<(string name, bool isArray)>();
+        }
+
+        private void SetEnvironmentVariable(Stack<(string name, bool isArray)> stack, TextBox txtOut)
+        {
+            txtOut.Text = string.Empty;
+            var JavaScriptCode = Cabecera;
+            JavaScriptCode = JavaScriptCode.Replace("<VariablePath>", WriteVariablePathFromStackContent(stack));
+            txtOut.Text = JavaScriptCode;
         }
 
         private void TreeView_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -36,21 +60,44 @@ namespace XML2JSManager
             _stack = LoadStack(selectedNode, _stack);
 
             // Volcamos el contenido de la pila en el TextBox.
-            WriteStackContent(_stack, _textBox);
+            SetEnvironmentVariable(_stack, _textBox);
         }
 
-        private static void WriteStackContent(Stack<string> stack, TextBox txtOut)
+        private static string WriteVariablePathFromStackContent(Stack<(string name, bool isArray)> stack)
         {
+            var path = new StringBuilder();
+            var previousItem = string.Empty;
+            bool isFirstArrayElement = true;
+
             foreach(var item in stack)
             {
-                txtOut.Text += $"Nombre: {item} \r\n";
+                var value = item.name;
+                if (item.isArray)
+                {
+                    if (isFirstArrayElement)
+                    {
+                        isFirstArrayElement = false;
+                        path.Insert(0, $"var {previousItem} = response");
+                        path.AppendLine(";");
+                    }
+                    var expression = $"var {value} = GetValidReference({previousItem}, '{value}');";
+                    path.AppendLine(expression);
+                }
+                else
+                    path.Append($"['{value}']");
+
+                previousItem = value;
             }
+
+            path.AppendLine($"pm.environment.set('{previousItem}', {previousItem});");
+
+            return path.ToString();
         }
 
-        private static Stack<string> LoadStack(TreeNode treeNode, Stack<string> stack )
+        private static Stack<(string name, bool isArray)> LoadStack(TreeNode treeNode, Stack<(string name, bool isArray)> stack )
         {
             // Agregamos el contenido del nodo a la pila            
-            stack.Push(treeNode.Text);                
+            stack.Push(new (treeNode.Text, (bool) treeNode.Tag));                
 
             // Verificar si el nodo tiene un nodo padre
             if (treeNode.Parent != null)
@@ -60,23 +107,6 @@ namespace XML2JSManager
             }
 
             return stack;
-        }
-
-
-        private string GetJavaScriptValue(string value)
-        {
-            if (string.IsNullOrWhiteSpace(value))
-            {
-                return "''"; // Si el valor está vacío o contiene solo espacios en blanco, se considera una cadena vacía en JavaScript
-            }
-
-            // Verificar si el valor contiene caracteres especiales que deben ser escapados en JavaScript
-            if (value.Contains("'"))
-            {
-                value = value.Replace("'", "\\'"); // Escapar las comillas simples en el valor
-            }
-
-            return "'" + value + "'";
         }
     }
 }

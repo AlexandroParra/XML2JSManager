@@ -1,0 +1,6 @@
+/***************************************************************
+* Script for XML Response
+***************************************************************/
+var response = xml2Json(responseBody);
+var variable = response<path>
+pm.environment.set('<variable>', variable);

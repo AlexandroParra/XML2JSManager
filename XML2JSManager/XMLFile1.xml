@@ -5,32 +5,60 @@
 			<result xsi:type="ns0:AvailabilityMultiRSV22">
 				<fromRow>0</fromRow>
 				<numRows>10</numRows>
-				<totalRows>1</totalRows>
+				<totalRows>7</totalRows>
 				<availableHotels>
 					<establishment>
 						<address>
-							<address>Urbanizacion Lago de Bristol 1 </address>
-							<cityCode>84</cityCode>
-							<cityName>CORRALEJO</cityName>
+							<address>CARRER GIRONA 110Eixample - Sagrada Familia </address>
+							<cityCode>47</cityCode>
+							<cityName>BARCELONA</cityName>
 							<countryCode>ES</countryCode>
 							<countryName>ESPAÑA</countryName>
 							<districtCode xsi:nil="1"/>
 							<districtName xsi:nil="1"/>
 							<email xsi:nil="1"/>
-							<fax>+34928866349</fax>
+							<fax>934321802</fax>
 							<name xsi:nil="1"/>
-							<stateCode>262</stateCode>
-							<stateName>FUERTEVENTURA</stateName>
-							<telephone>+34928867020</telephone>
-							<zipCode>35560</zipCode>
+							<stateCode>250</stateCode>
+							<stateName>BARCELONA</stateName>
+							<telephone>933238790</telephone>
+							<zipCode>08009</zipCode>
 						</address>
-						<categoryCode>3</categoryCode>
-						<categoryName>***</categoryName>
-						<id>339</id>
+						<categoryCode>6</categoryCode>
+						<categoryName>*****</categoryName>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2021-06-17T22:00:00.000Z</from>
+							<text>
+								TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales (Barcelona), variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.
+
+
+
+								https://atc.gencat.cat/es/tributs/ieet/quota-tributaria/
+							</text>
+							<to>2050-06-17T22:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2015-12-13T23:00:00.000Z</from>
+							<text>TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales, variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.</text>
+							<to>2039-12-13T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<id>110879</id>
 						<imageUrl xsi:nil="1"/>
-						<latitude>28.74361</latitude>
-						<longitude>-13.869551</longitude>
-						<name>HESPERIA BRISTOL PLAYA</name>
+						<latitude>41.396687</latitude>
+						<longitude>2.1686962</longitude>
+						<name>MH SUITES</name>
 						<shortDescription xsi:nil="1"/>
 						<weight>0</weight>
 					</establishment>
@@ -39,7 +67,7 @@
 						<prices>
 							<amount>
 								<currencyCode>EUR</currencyCode>
-								<value>656.13</value>
+								<value>793.7</value>
 							</amount>
 							<boardCategoryCode>RO</boardCategoryCode>
 							<boardTypeCode>RO</boardTypeCode>
@@ -65,20 +93,86 @@
 								</comments>
 								<comments xsi:type="ns0:CommentsRSV2">
 									<from xsi:nil="1"/>
-									<text>2 - 16.67%</text>
+									<text>31 - 14.31%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>8 - 100.00%</text>
 									<to xsi:nil="1"/>
 									<type>Cancellation term</type>
 									<conditions xsi:nil="1"/>
 									<errataType xsi:nil="1"/>
 								</comments>
 								<paxes>5</paxes>
-								<price>656.13</price>
-								<pricePerPaxAndNight>21.87</pricePerPaxAndNight>
-								<pricePerRoomAndNight>109.36</pricePerRoomAndNight>
-								<typeCode>42JNDLU03</typeCode>
-								<typeName>APARTMENT CAPACITY 5</typeName>
-								<description>APARTAMENTO CAPACIDAD 5. SOLO ALOJAMIENTO. Tarifa estandar</description>
-								<ratePlanCode>42JNDLU03:RO:STD::hLQXMDMjAyMzExMDl8MjAyMzExMTV8V3w1M3wyODEwfEFQVC5DNS0xfENHLUJBUiBST3xST3x8MX4yfjN8MTJ+MTJ+MTZ8TkAwNn5+MjAwMmZhfi0xODkxOTAxMTE4fk5+fn5OT1J+MTk2NTg2MkZCOEYxNDdGMTY4NzUzMDIxMDQ4NjAwUFdFUzAwMDAwMDEwMDAwMDAwMDA3MjAyMjdkIyZAJiM3OTg3MTc=</ratePlanCode>
+								<price>793.7</price>
+								<pricePerPaxAndNight>26.46</pricePerPaxAndNight>
+								<pricePerRoomAndNight>132.28</pricePerRoomAndNight>
+								<typeCode>42JNDKRG3</typeCode>
+								<typeName>APARTMENT CAPACITY 5 TWO BEDROOMS</typeName>
+								<description>APARTAMENTO CAPACIDAD 5 DOS DORMITORIOS. SOLO ALOJAMIENTO. Tarifa Opaca</description>
+								<ratePlanCode>42JNDKRG3:RO:OPA::mVVAZjMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTQyOTMzfEFQVC5CMi1DNXxBQlNPTFVUfFJPfHwxfjJ+M3wxMn4xMn4xNnxQQDA2fn4yM2EzMDJ+LTcyNDA0NzM0MH5Ofn5+Tk9SfjU0RDhCN0YyRjEzNjQyRjE2ODc3NjcyMzIxMzEwMFBXRVMwMDAwMDA2MDAwMDAwMDAwODIzYTMwMiMmQCYjMTg1Mzk2NQ==</ratePlanCode>
+								<rates>
+									<rate>OPA</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>933.78</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>1 - 100.00%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>4 - 14.31%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>933.78</price>
+								<pricePerPaxAndNight>31.13</pricePerPaxAndNight>
+								<pricePerRoomAndNight>155.63</pricePerRoomAndNight>
+								<typeCode>42JNDKRG3</typeCode>
+								<typeName>APARTMENT CAPACITY 5 TWO BEDROOMS</typeName>
+								<description>APARTAMENTO CAPACIDAD 5 DOS DORMITORIOS. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JNDKRG3:RO:STD::PFZNZPMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTQyOTMzfEFQVC5CMi1DNXxDRy0gVE9ET1N8Uk98fDF+Mn4zfDEyfjEyfjE2fE5AMDZ+fjIwMDNlMH4zMzIxNjM1MTR+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyM2EzOGEjJkAmIzE4NTM5NjU=</ratePlanCode>
 								<rates>
 									<rate>STD</rate>
 								</rates>
@@ -94,8 +188,8 @@
 							<childrenAges>16</childrenAges>
 							<priceOfFirstNight xsi:nil="1"/>
 							<quantity>1</quantity>
-							<typeCode>42JNDLU03</typeCode>
-							<typeName>APARTMENT CAPACITY 5</typeName>
+							<typeCode>42JNDKRG3</typeCode>
+							<typeName>APARTMENT CAPACITY 5 TWO BEDROOMS</typeName>
 							<typeCategoryCode xsi:nil="1"/>
 							<typeCategoryName xsi:nil="1"/>
 						</rooms>
@@ -104,7 +198,7 @@
 						<prices>
 							<amount>
 								<currencyCode>EUR</currencyCode>
-								<value>811.06</value>
+								<value>840.4</value>
 							</amount>
 							<boardCategoryCode>RO</boardCategoryCode>
 							<boardTypeCode>RO</boardTypeCode>
@@ -130,20 +224,151 @@
 								</comments>
 								<comments xsi:type="ns0:CommentsRSV2">
 									<from xsi:nil="1"/>
-									<text>2 - 16.67%</text>
+									<text>1 - 100.00%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>4 - 14.31%</text>
 									<to xsi:nil="1"/>
 									<type>Cancellation term</type>
 									<conditions xsi:nil="1"/>
 									<errataType xsi:nil="1"/>
 								</comments>
 								<paxes>5</paxes>
-								<price>811.06</price>
-								<pricePerPaxAndNight>27.04</pricePerPaxAndNight>
-								<pricePerRoomAndNight>135.18</pricePerRoomAndNight>
-								<typeCode>42JNDLUO3</typeCode>
-								<typeName>APARTMENT CAPACITY 6</typeName>
-								<description>APARTAMENTO CAPACIDAD 6. SOLO ALOJAMIENTO. Tarifa estandar</description>
-								<ratePlanCode>42JNDLUO3:RO:STD::LXEWyHMjAyMzExMDl8MjAyMzExMTV8V3w1M3wyODEwfEFQVC5DNnxDRy1CQVIgUk98Uk98fDF+Mn4zfDEyfjEyfjE2fE5AMDZ+fjIwMDNhZX4tMTE1NjIzMzQzOH5Ofn5+Tk9SfjE5NjU4NjJGQjhGMTQ3RjE2ODc1MzAyMTA0ODYwMFBXRVMwMDAwMDAxMDAwMDAwMDAwNzIyYzMxMyMmQCYjNzk4NzE3</ratePlanCode>
+								<price>840.4</price>
+								<pricePerPaxAndNight>28.02</pricePerPaxAndNight>
+								<pricePerRoomAndNight>140.07</pricePerRoomAndNight>
+								<typeCode>42JNDKRO3</typeCode>
+								<typeName>APARTMENT CAPACITY 6 TWO BEDROOMS</typeName>
+								<description>APARTAMENTO CAPACIDAD 6 DOS DORMITORIOS. SOLO ALOJAMIENTO. Tarifa Opaca</description>
+								<ratePlanCode>42JNDKRO3:RO:OPA::QakcURMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTQyOTMzfEFQVC5CMi1DNnxDRyBPUFEgRkxFWHxST3x8MX4yfjN8MTJ+MTJ+MTZ8UEAwNn5+MjVjMzJmfjExMTc0OTg3ODB+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyNWMzMmYjJkAmIzE4NTM5NjU=</ratePlanCode>
+								<rates>
+									<rate>OPA</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JNDKRO3</typeCode>
+							<typeName>APARTMENT CAPACITY 6 TWO BEDROOMS</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+				</availableHotels>
+				<availableHotels>
+					<establishment>
+						<address>
+							<address>Gran De Gracia, 205</address>
+							<cityCode>47</cityCode>
+							<cityName>BARCELONA</cityName>
+							<countryCode>ES</countryCode>
+							<countryName>ESPAÑA</countryName>
+							<districtCode xsi:nil="1"/>
+							<districtName xsi:nil="1"/>
+							<email xsi:nil="1"/>
+							<fax xsi:nil="1"/>
+							<name xsi:nil="1"/>
+							<stateCode>250</stateCode>
+							<stateName>BARCELONA</stateName>
+							<telephone>+34934510402</telephone>
+							<zipCode>08012</zipCode>
+						</address>
+						<categoryCode>10</categoryCode>
+						<categoryName>2 LLAVES</categoryName>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2021-06-17T22:00:00.000Z</from>
+							<text>
+								TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales (Barcelona), variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.
+
+
+
+								https://atc.gencat.cat/es/tributs/ieet/quota-tributaria/
+							</text>
+							<to>2050-06-17T22:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2015-12-13T23:00:00.000Z</from>
+							<text>TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales, variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.</text>
+							<to>2039-12-13T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<id>110738</id>
+						<imageUrl xsi:nil="1"/>
+						<latitude>41.404278</latitude>
+						<longitude>2.151645</longitude>
+						<name>BARCELONA GRAN DE GRACIA</name>
+						<shortDescription xsi:nil="1"/>
+						<weight>0</weight>
+					</establishment>
+					<moreCombinations>false</moreCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>929.7</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>8 - 50.00%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>929.7</price>
+								<pricePerPaxAndNight>30.99</pricePerPaxAndNight>
+								<pricePerRoomAndNight>154.95</pricePerRoomAndNight>
+								<typeCode>42JNDMC03</typeCode>
+								<typeName>APARTMENT DELUXE</typeName>
+								<description>APARTAMENTO DELUXE. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JNDMC03:RO:STD::fGcukLMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MjM1NzkwfEFQVC5EWHxDRy1CQVJ8Uk98fDF+Mn4zfDEyfjEyfjE2fE5AMDZ+fjIwMDQyNH4xNjk1NjM3NjI2fk5+fn5OT1J+NTREOEI3RjJGMTM2NDJGMTY4Nzc2NzIzMjEzMTAwUFdFUzAwMDAwMDYwMDAwMDAwMDA4MjNlMzg2IyZAJiM4Njg5MDg=</ratePlanCode>
 								<rates>
 									<rate>STD</rate>
 								</rates>
@@ -159,8 +384,1211 @@
 							<childrenAges>16</childrenAges>
 							<priceOfFirstNight xsi:nil="1"/>
 							<quantity>1</quantity>
-							<typeCode>42JNDLUO3</typeCode>
-							<typeName>APARTMENT CAPACITY 6</typeName>
+							<typeCode>42JNDMC03</typeCode>
+							<typeName>APARTMENT DELUXE</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+				</availableHotels>
+				<availableHotels>
+					<establishment>
+						<address>
+							<address>MILA I FONTANALS, 55, BARCELONA</address>
+							<cityCode>47</cityCode>
+							<cityName>BARCELONA</cityName>
+							<countryCode>ES</countryCode>
+							<countryName>ESPAÑA</countryName>
+							<districtCode xsi:nil="1"/>
+							<districtName xsi:nil="1"/>
+							<email xsi:nil="1"/>
+							<fax>934525872</fax>
+							<name xsi:nil="1"/>
+							<stateCode>250</stateCode>
+							<stateName>BARCELONA</stateName>
+							<telephone>934510402,</telephone>
+							<zipCode>.</zipCode>
+						</address>
+						<categoryCode>3</categoryCode>
+						<categoryName>***</categoryName>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2021-06-17T22:00:00.000Z</from>
+							<text>
+								TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales (Barcelona), variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.
+
+
+
+								https://atc.gencat.cat/es/tributs/ieet/quota-tributaria/
+							</text>
+							<to>2050-06-17T22:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2015-12-13T23:00:00.000Z</from>
+							<text>TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales, variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.</text>
+							<to>2039-12-13T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<id>438861</id>
+						<imageUrl xsi:nil="1"/>
+						<latitude>41.402466</latitude>
+						<longitude>2.1609406</longitude>
+						<name>BARCELONA APARTAMENT MILA</name>
+						<shortDescription xsi:nil="1"/>
+						<weight>0</weight>
+					</establishment>
+					<moreCombinations>false</moreCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>1002.15</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>8 - 50.00%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>1002.15</price>
+								<pricePerPaxAndNight>33.4</pricePerPaxAndNight>
+								<pricePerRoomAndNight>167.02</pricePerRoomAndNight>
+								<typeCode>42JNDMC03</typeCode>
+								<typeName>APARTMENT DELUXE</typeName>
+								<description>APARTAMENTO DELUXE. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JNDMC03:RO:STD::UjCOmcMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MzY0MjA2fEFQVC5EWHxDRy1CQVJ8Uk98fDF+Mn4zfDEyfjEyfjE2fE5AMDZ+fjIwMDQ3ZX4xMjI3MTk1MTV+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyNjAzY2MjJkAmIzgwMDA4Nw==</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JNDMC03</typeCode>
+							<typeName>APARTMENT DELUXE</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+				</availableHotels>
+				<availableHotels>
+					<establishment>
+						<address>
+							<address>Via Augusta, 5 </address>
+							<cityCode>47</cityCode>
+							<cityName>BARCELONA</cityName>
+							<countryCode>ES</countryCode>
+							<countryName>ESPAÑA</countryName>
+							<districtCode>13</districtCode>
+							<districtName>EIXAMPLE</districtName>
+							<email>balmoral@abbahoteles.com</email>
+							<fax>+34934151421</fax>
+							<name xsi:nil="1"/>
+							<stateCode>250</stateCode>
+							<stateName>BARCELONA</stateName>
+							<telephone>+34932178700</telephone>
+							<zipCode>08006</zipCode>
+						</address>
+						<categoryCode>4</categoryCode>
+						<categoryName>****</categoryName>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2021-06-17T22:00:00.000Z</from>
+							<text>
+								TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales (Barcelona), variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.
+
+
+
+								https://atc.gencat.cat/es/tributs/ieet/quota-tributaria/
+							</text>
+							<to>2050-06-17T22:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2015-12-13T23:00:00.000Z</from>
+							<text>TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales, variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.</text>
+							<to>2039-12-13T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2018-07-02T22:00:00.000Z</from>
+							<text>POLÍTICA PARA GRUPOS: Reservas de 5 o más habitaciones será considerado un grupo, y tendrá tratamiento como tal, por lo que puede aplicar condiciones especiales y suplementos.</text>
+							<to>2040-12-30T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions xsi:nil="1"/>
+							<errataType>POLÍTICA PARA GRUPOS</errataType>
+						</comments>
+						<id>761</id>
+						<imageUrl xsi:nil="1"/>
+						<latitude>41.396194</latitude>
+						<longitude>2.155155</longitude>
+						<name>HOTEL ABBA BALMORAL</name>
+						<shortDescription xsi:nil="1"/>
+						<weight>0</weight>
+					</establishment>
+					<moreCombinations>false</moreCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>2635.77</value>
+							</amount>
+							<boardCategoryCode>BB</boardCategoryCode>
+							<boardTypeCode>BB</boardTypeCode>
+							<boardTypeName>ALOJAMIENTO Y DESAYUNO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>1 - 17.00%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>2635.77</price>
+								<pricePerPaxAndNight>87.86</pricePerPaxAndNight>
+								<pricePerRoomAndNight>439.3</pricePerRoomAndNight>
+								<typeCode>44BF123O3</typeCode>
+								<typeName>Family room</typeName>
+								<description>Habitación familiar. ALOJAMIENTO Y DESAYUNO. Tarifa estandar</description>
+								<ratePlanCode>44BF123O3:BB:STD::DXBdPgYm9hcmREZXNjcmlwdGlvbj1EZXNheXVub3x8bWVhbElkPTN8fHByaWNlPTI1NTl8fHJhdGVDb2RlPVNURHx8cm9vbURlc2NyaXB0aW9uPUhhYml0YWNpw7NuIGZhbWlsaWFyfHxyb29tSWQ9MzQyNjI0MTAjJkAmIzExMDQ1MTg=</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>2080.6</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>1 - 17.00%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>2080.6</price>
+								<pricePerPaxAndNight>69.35</pricePerPaxAndNight>
+								<pricePerRoomAndNight>346.77</pricePerRoomAndNight>
+								<typeCode>44BF123O3</typeCode>
+								<typeName>Family room</typeName>
+								<description>Habitación familiar. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>44BF123O3:RO:STD::yiygIpYm9hcmREZXNjcmlwdGlvbj1Tw7NsbyBhbG9qYW1pZW50b3x8bWVhbElkPTF8fHByaWNlPTIwMjB8fHJhdGVDb2RlPVNURHx8cm9vbURlc2NyaXB0aW9uPUhhYml0YWNpw7NuIGZhbWlsaWFyfHxyb29tSWQ9MzQyNjIzODIjJkAmIzExMDQ1MTg=</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>44BF123O3</typeCode>
+							<typeName>Family room</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+				</availableHotels>
+				<availableHotels>
+					<establishment>
+						<address>
+							<address>Passeig de Gracia 84</address>
+							<cityCode>47</cityCode>
+							<cityName>BARCELONA</cityName>
+							<countryCode>ES</countryCode>
+							<countryName>ESPAÑA</countryName>
+							<districtCode xsi:nil="1"/>
+							<districtName xsi:nil="1"/>
+							<email xsi:nil="1"/>
+							<fax>+34 933173179</fax>
+							<name xsi:nil="1"/>
+							<stateCode>250</stateCode>
+							<stateName>BARCELONA</stateName>
+							<telephone>+34 933019400</telephone>
+							<zipCode>08008</zipCode>
+						</address>
+						<categoryCode>4</categoryCode>
+						<categoryName>****</categoryName>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2021-06-17T22:00:00.000Z</from>
+							<text>
+								TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales (Barcelona), variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.
+
+
+
+								https://atc.gencat.cat/es/tributs/ieet/quota-tributaria/
+							</text>
+							<to>2050-06-17T22:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2015-12-13T23:00:00.000Z</from>
+							<text>TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales, variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.</text>
+							<to>2039-12-13T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<id>467352</id>
+						<imageUrl xsi:nil="1"/>
+						<latitude>41.394176</latitude>
+						<longitude>2.1624289</longitude>
+						<name>Royal Passeig de Gracia.</name>
+						<shortDescription xsi:nil="1"/>
+						<weight>0</weight>
+					</establishment>
+					<moreCombinations>false</moreCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>2569.31</value>
+							</amount>
+							<boardCategoryCode>BB</boardCategoryCode>
+							<boardTypeCode>BB2</boardTypeCode>
+							<boardTypeName>ALOJAMIENTO Y DESAYUNO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>4 - 16.78%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>2569.31</price>
+								<pricePerPaxAndNight>85.64</pricePerPaxAndNight>
+								<pricePerRoomAndNight>428.22</pricePerRoomAndNight>
+								<typeCode>42JOOR783</typeCode>
+								<typeName>FAMILY ROOM CAPACITY 5</typeName>
+								<description>HABITACION FAMILIAR CAPACIDAD 5. ALOJAMIENTO Y DESAYUNO. Tarifa estandar</description>
+								<ratePlanCode>42JOOR783:BB2:STD::zrgsVnMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTk0Njg1fEZBTS5DNXxCQVIgIEJCfEJCfHwxfjJ+M3wxMn4xMn4xNnxOQDA2fn4yMDBiMjZ+LTEyMTA4MTUzMjh+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyMzA5YmUjJkAmIzExODM5NjM=</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>2083.2</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>4 - 16.81%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>2083.2</price>
+								<pricePerPaxAndNight>69.44</pricePerPaxAndNight>
+								<pricePerRoomAndNight>347.2</pricePerRoomAndNight>
+								<typeCode>42JOOR783</typeCode>
+								<typeName>FAMILY ROOM CAPACITY 5</typeName>
+								<description>HABITACION FAMILIAR CAPACIDAD 5. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JOOR783:RO:STD::NCQPKcMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTk0Njg1fEZBTS5DNXxCQVIgIFJPfFJPfHwxfjJ+M3wxMn4xMn4xNnxOQDA2fn4yMDA5MGF+LTgyNDU4MDgyOH5Ofn5+Tk9SfjU0RDhCN0YyRjEzNjQyRjE2ODc3NjcyMzIxMzEwMFBXRVMwMDAwMDA2MDAwMDAwMDAwODIzNDdlNiMmQCYjMTE4Mzk2Mw==</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JOOR783</typeCode>
+							<typeName>FAMILY ROOM CAPACITY 5</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+				</availableHotels>
+				<availableHotels>
+					<establishment>
+						<address>
+							<address>Passeig de Gracia, 132 </address>
+							<cityCode>47</cityCode>
+							<cityName>BARCELONA</cityName>
+							<countryCode>ES</countryCode>
+							<countryName>ESPAÑA</countryName>
+							<districtCode xsi:nil="1"/>
+							<districtName xsi:nil="1"/>
+							<email xsi:nil="1"/>
+							<fax>+34932553002</fax>
+							<name xsi:nil="1"/>
+							<stateCode>250</stateCode>
+							<stateName>BARCELONA</stateName>
+							<telephone>+34932553000</telephone>
+							<zipCode>08008</zipCode>
+						</address>
+						<categoryCode>8</categoryCode>
+						<categoryName>*****GL</categoryName>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2021-06-17T22:00:00.000Z</from>
+							<text>
+								TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales (Barcelona), variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.
+
+
+
+								https://atc.gencat.cat/es/tributs/ieet/quota-tributaria/
+							</text>
+							<to>2050-06-17T22:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2015-12-13T23:00:00.000Z</from>
+							<text>TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales, variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.</text>
+							<to>2039-12-13T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<id>3366</id>
+						<imageUrl xsi:nil="1"/>
+						<latitude>41.397984</latitude>
+						<longitude>2.1578693</longitude>
+						<name>HOTEL CASA FUSTER</name>
+						<shortDescription xsi:nil="1"/>
+						<weight>0</weight>
+					</establishment>
+					<moreCombinations>false</moreCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>3047.44</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.83%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>3047.44</price>
+								<pricePerPaxAndNight>101.58</pricePerPaxAndNight>
+								<pricePerRoomAndNight>507.9</pricePerRoomAndNight>
+								<typeCode>42JOOSF03</typeCode>
+								<typeName>JUNIOR SUITE DELUXE</typeName>
+								<description>JUNIOR SUITE DELUXE. SOLO ALOJAMIENTO. Tarifa Opaca</description>
+								<ratePlanCode>42JOOSF03:RO:OPA::JrIfzyMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8SlNVLkRYfE9GRSBMRVNOT0NIRVNPUHxST3x8MX4yfjN8MTJ+MTJ+MTZ8UEAwNn5+MjQ0Yjhlfi0xMTE2Nzg5ODk2fk5+fn5OT1J+NTREOEI3RjJGMTM2NDJGMTY4Nzc2NzIzMjEzMTAwUFdFUzAwMDAwMDYwMDAwMDAwMDA4MjQ0YjhlIyZAJiM3ODIyOTg=</ratePlanCode>
+								<rates>
+									<rate>OPA</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JOOSF03</typeCode>
+							<typeName>JUNIOR SUITE DELUXE</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>3793.24</value>
+							</amount>
+							<boardCategoryCode>BB</boardCategoryCode>
+							<boardTypeCode>BB2</boardTypeCode>
+							<boardTypeName>ALOJAMIENTO Y DESAYUNO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.79%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>3793.24</price>
+								<pricePerPaxAndNight>126.44</pricePerPaxAndNight>
+								<pricePerRoomAndNight>632.2</pricePerRoomAndNight>
+								<typeCode>42JOOSGG3</typeCode>
+								<typeName>JUNIOR SUITE DELUXE</typeName>
+								<description>JUNIOR SUITE DELUXE. ALOJAMIENTO Y DESAYUNO. Tarifa Opaca</description>
+								<ratePlanCode>42JOOSGG3:BB2:OPA::qQamRJMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8SlNVLkRYLTV8T0ZFLUVCMTVPUEJCfEJCfHwxfjJ+M3wxMn4xMn4xNnxQQDA2fn4yNGNlNjJ+LTEzMTQ5ODk3NDV+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyNGNlNjIjJkAmIzc4MjI5OA==</ratePlanCode>
+								<rates>
+									<rate>OPA</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>4214.7</value>
+							</amount>
+							<boardCategoryCode>BB</boardCategoryCode>
+							<boardTypeCode>BB2</boardTypeCode>
+							<boardTypeName>ALOJAMIENTO Y DESAYUNO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.79%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>4214.7</price>
+								<pricePerPaxAndNight>140.49</pricePerPaxAndNight>
+								<pricePerRoomAndNight>702.45</pricePerRoomAndNight>
+								<typeCode>42JOOSGG3</typeCode>
+								<typeName>JUNIOR SUITE DELUXE</typeName>
+								<description>JUNIOR SUITE DELUXE. ALOJAMIENTO Y DESAYUNO. Tarifa estandar</description>
+								<ratePlanCode>42JOOSGG3:BB2:STD::JLdNkdMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8SlNVLkRYLTV8T0ZFLUVCMTVEQkJ8QkJ8fDF+Mn4zfDEyfjEyfjE2fE5AMDZ+fjIzMjEzMjh+LTEzNTg3MjEzODF+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyNWVmZmIjJkAmIzc4MjI5OA==</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>3181.83</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.82%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>3181.83</price>
+								<pricePerPaxAndNight>106.06</pricePerPaxAndNight>
+								<pricePerRoomAndNight>530.31</pricePerRoomAndNight>
+								<typeCode>42JOOSGG3</typeCode>
+								<typeName>JUNIOR SUITE DELUXE</typeName>
+								<description>JUNIOR SUITE DELUXE. SOLO ALOJAMIENTO. Tarifa Opaca</description>
+								<ratePlanCode>42JOOSGG3:RO:OPA::FfRtFGMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8SlNVLkRYLTV8T0ZFLUVCMTVPUHxST3x8MX4yfjN8MTJ+MTJ+MTZ8UEAwNn5+MjEwYzExfi0xNTY0MDY4MzQwfk5+fn5OT1J+NTREOEI3RjJGMTM2NDJGMTY4Nzc2NzIzMjEzMTAwUFdFUzAwMDAwMDYwMDAwMDAwMDA4MjEwYzExIyZAJiM3ODIyOTg=</ratePlanCode>
+								<rates>
+									<rate>OPA</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>3535.39</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.82%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>3535.39</price>
+								<pricePerPaxAndNight>117.84</pricePerPaxAndNight>
+								<pricePerRoomAndNight>589.23</pricePerRoomAndNight>
+								<typeCode>42JOOSGG3</typeCode>
+								<typeName>JUNIOR SUITE DELUXE</typeName>
+								<description>JUNIOR SUITE DELUXE. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JOOSGG3:RO:STD::LEcEIsMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8SlNVLkRYLTV8T0ZFLUVCMTVEfFJPfHwxfjJ+M3wxMn4xMn4xNnxOQDA2fn4yMDAxMDEyfi0xNTAxNDM3NjU0fk5+fn5OT1J+NTREOEI3RjJGMTM2NDJGMTY4Nzc2NzIzMjEzMTAwUFdFUzAwMDAwMDYwMDAwMDAwMDA4MjJhZDY4IyZAJiM3ODIyOTg=</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JOOSGG3</typeCode>
+							<typeName>JUNIOR SUITE DELUXE</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>5413.06</value>
+							</amount>
+							<boardCategoryCode>BB</boardCategoryCode>
+							<boardTypeCode>BB2</boardTypeCode>
+							<boardTypeName>ALOJAMIENTO Y DESAYUNO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.71%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>5413.06</price>
+								<pricePerPaxAndNight>180.44</pricePerPaxAndNight>
+								<pricePerRoomAndNight>902.18</pricePerRoomAndNight>
+								<typeCode>42JOPNSO3</typeCode>
+								<typeName>SUITE GRAND</typeName>
+								<description>Suite GRAND. ALOJAMIENTO Y DESAYUNO. Tarifa Opaca</description>
+								<ratePlanCode>42JOPNSO3:BB2:OPA::vxQsVBMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8U1VJLkdELTV8T0ZFLUVCMTVPUEJCfEJCfHwxfjJ+M3wxMn4xMn4xNnxQQDA2fn4yMjgxNDg3fi0xOTQ1MDU3MDM5fk5+fn5OT1J+NTREOEI3RjJGMTM2NDJGMTY4Nzc2NzIzMjEzMTAwUFdFUzAwMDAwMDYwMDAwMDAwMDA4MjI4MTQ4NyMmQCYjNzgyMjk4</ratePlanCode>
+								<rates>
+									<rate>OPA</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>6014.54</value>
+							</amount>
+							<boardCategoryCode>BB</boardCategoryCode>
+							<boardTypeCode>BB2</boardTypeCode>
+							<boardTypeName>ALOJAMIENTO Y DESAYUNO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.71%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>6014.54</price>
+								<pricePerPaxAndNight>200.49</pricePerPaxAndNight>
+								<pricePerRoomAndNight>1002.43</pricePerRoomAndNight>
+								<typeCode>42JOPNSO3</typeCode>
+								<typeName>SUITE GRAND</typeName>
+								<description>Suite GRAND. ALOJAMIENTO Y DESAYUNO. Tarifa estandar</description>
+								<ratePlanCode>42JOPNSO3:BB2:STD::ShKkrkMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8U1VJLkdELTV8T0ZFLUVCMTVEQkJ8QkJ8fDF+Mn4zfDEyfjEyfjE2fE5AMDZ+fjI1YTFiNTZ+LTE2MjM1MTUwNjR+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyMjQxNmNmIyZAJiM3ODIyOTg=</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>4801.72</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.72%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>4801.72</price>
+								<pricePerPaxAndNight>160.06</pricePerPaxAndNight>
+								<pricePerRoomAndNight>800.29</pricePerRoomAndNight>
+								<typeCode>42JOPNSO3</typeCode>
+								<typeName>SUITE GRAND</typeName>
+								<description>Suite GRAND. SOLO ALOJAMIENTO. Tarifa Opaca</description>
+								<ratePlanCode>42JOPNSO3:RO:OPA::sIvbzKMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8U1VJLkdELTV8T0ZFLUVCMTVPUHxST3x8MX4yfjN8MTJ+MTJ+MTZ8UEAwNn5+MjU2MTIzNX4zNjg1NzUxNDJ+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyNTYxMjM1IyZAJiM3ODIyOTg=</ratePlanCode>
+								<rates>
+									<rate>OPA</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>5335.19</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.72%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>5335.19</price>
+								<pricePerPaxAndNight>177.84</pricePerPaxAndNight>
+								<pricePerRoomAndNight>889.2</pricePerRoomAndNight>
+								<typeCode>42JOPNSO3</typeCode>
+								<typeName>SUITE GRAND</typeName>
+								<description>Suite GRAND. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JOPNSO3:RO:STD::vDiZZxMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8MTUxNTl8U1VJLkdELTV8T0ZFLUVCMTVEfFJPfHwxfjJ+M3wxMn4xMn4xNnxOQDA2fn4yMjgxODQwfi0xNjEwMTk3OTAxfk5+fn5OT1J+NTREOEI3RjJGMTM2NDJGMTY4Nzc2NzIzMjEzMTAwUFdFUzAwMDAwMDYwMDAwMDAwMDA4MjUwMTQzYiMmQCYjNzgyMjk4</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JOPNSO3</typeCode>
+							<typeName>SUITE GRAND</typeName>
+							<typeCategoryCode xsi:nil="1"/>
+							<typeCategoryName xsi:nil="1"/>
+						</rooms>
+					</roomCombinations>
+				</availableHotels>
+				<availableHotels>
+					<establishment>
+						<address>
+							<address>ROSELLON,265  </address>
+							<cityCode>47</cityCode>
+							<cityName>BARCELONA</cityName>
+							<countryCode>ES</countryCode>
+							<countryName>ESPAÑA</countryName>
+							<districtCode xsi:nil="1"/>
+							<districtName xsi:nil="1"/>
+							<email xsi:nil="1"/>
+							<fax>934921917</fax>
+							<name xsi:nil="1"/>
+							<stateCode>250</stateCode>
+							<stateName>BARCELONA</stateName>
+							<telephone>934454000</telephone>
+							<zipCode>08008</zipCode>
+						</address>
+						<categoryCode>6</categoryCode>
+						<categoryName>*****</categoryName>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2021-06-17T22:00:00.000Z</from>
+							<text>
+								TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales (Barcelona), variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.
+
+
+
+								https://atc.gencat.cat/es/tributs/ieet/quota-tributaria/
+							</text>
+							<to>2050-06-17T22:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<comments xsi:type="ns0:CommentsRSV2">
+							<from>2015-12-13T23:00:00.000Z</from>
+							<text>TASA MUNICIPAL: Los precios no  incluyen los impuestos de estancia definidos por los entes locales, variables según la ciudad y categoría de hotel. Tales impuestos se pagan directamente en el hotel al momento de la llegada.</text>
+							<to>2039-12-13T23:00:00.000Z</to>
+							<type>ERRATA</type>
+							<conditions>
+								<calculationRules xsi:nil="1"/>
+								<version>1.0</version>
+							</conditions>
+							<errataType>TASA MUNICIPAL</errataType>
+						</comments>
+						<id>106343</id>
+						<imageUrl xsi:nil="1"/>
+						<latitude>41.396202</latitude>
+						<longitude>2.1609535</longitude>
+						<name>SIR VICTOR HOTEL</name>
+						<shortDescription xsi:nil="1"/>
+						<weight>0</weight>
+					</establishment>
+					<moreCombinations>false</moreCombinations>
+					<roomCombinations>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>4142.27</value>
+							</amount>
+							<boardCategoryCode>BB</boardCategoryCode>
+							<boardTypeCode>BB2</boardTypeCode>
+							<boardTypeName>ALOJAMIENTO Y DESAYUNO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>2 - 16.56%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>4142.27</price>
+								<pricePerPaxAndNight>138.07</pricePerPaxAndNight>
+								<pricePerRoomAndNight>690.38</pricePerRoomAndNight>
+								<typeCode>42JNEETG3</typeCode>
+								<typeName>FAMILY ROOM STANDARD</typeName>
+								<description>HABITACION FAMILIAR STANDARD. ALOJAMIENTO Y DESAYUNO. Tarifa estandar</description>
+								<ratePlanCode>42JNEETG3:BB2:STD::nIzlrIMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8NjU5ODR8RkFNLlNUfE1MT1MzIE5FVCBCQnxCQnx8MX4yfjN8MTJ+MTJ+MTZ8TkAwNn5+MjAwMTIzMH43MTQ3NDk4NzB+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyM2VmYjUjJkAmIzkxNTUzOQ==</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<prices>
+							<amount>
+								<currencyCode>EUR</currencyCode>
+								<value>3368.29</value>
+							</amount>
+							<boardCategoryCode>RO</boardCategoryCode>
+							<boardTypeCode>RO</boardTypeCode>
+							<boardTypeName>SOLO ALOJAMIENTO</boardTypeName>
+							<offer>false</offer>
+							<onRequest>false</onRequest>
+							<roomPrices>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from>2017-11-30T23:00:00.000Z</from>
+									<text>100.0%</text>
+									<to>2039-12-30T23:00:00.000Z</to>
+									<type>NO SHOW</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>cancellations@jumbotours.com</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation email</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<comments xsi:type="ns0:CommentsRSV2">
+									<from xsi:nil="1"/>
+									<text>3 - 16.53%</text>
+									<to xsi:nil="1"/>
+									<type>Cancellation term</type>
+									<conditions xsi:nil="1"/>
+									<errataType xsi:nil="1"/>
+								</comments>
+								<paxes>5</paxes>
+								<price>3368.29</price>
+								<pricePerPaxAndNight>112.28</pricePerPaxAndNight>
+								<pricePerRoomAndNight>561.38</pricePerRoomAndNight>
+								<typeCode>42JNEETG3</typeCode>
+								<typeName>FAMILY ROOM STANDARD</typeName>
+								<description>HABITACION FAMILIAR STANDARD. SOLO ALOJAMIENTO. Tarifa estandar</description>
+								<ratePlanCode>42JNEETG3:RO:STD::FbzqvTMjAyMzExMDl8MjAyMzExMTV8V3wxMDJ8NjU5ODR8RkFNLlNUfE1MT1MzIE5FVHxST3x8MX4yfjN8MTJ+MTJ+MTZ8TkAwNn5+MjAwZWNhfjE4OTMwODUzMDJ+Tn5+fk5PUn41NEQ4QjdGMkYxMzY0MkYxNjg3NzY3MjMyMTMxMDBQV0VTMDAwMDAwNjAwMDAwMDAwMDgyMTJjYzYjJkAmIzkxNTUzOQ==</ratePlanCode>
+								<rates>
+									<rate>STD</rate>
+								</rates>
+								<typeCategoryCode xsi:nil="1"/>
+								<typeCategoryName xsi:nil="1"/>
+							</roomPrices>
+						</prices>
+						<rooms>
+							<adults>2</adults>
+							<children>3</children>
+							<childrenAges>12</childrenAges>
+							<childrenAges>12</childrenAges>
+							<childrenAges>16</childrenAges>
+							<priceOfFirstNight xsi:nil="1"/>
+							<quantity>1</quantity>
+							<typeCode>42JNEETG3</typeCode>
+							<typeName>FAMILY ROOM STANDARD</typeName>
 							<typeCategoryCode xsi:nil="1"/>
 							<typeCategoryName xsi:nil="1"/>
 						</rooms>

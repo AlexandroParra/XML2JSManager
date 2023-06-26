@@ -2,62 +2,43 @@
 using System.Windows.Forms;
 using System.Xml;
 
-public class XmlToTreeView
+namespace XML2JSManager
 {
-    public static void LoadXmlToTreeView(string xmlFilePath, TreeView treeView)
+    public static class XmlToTreeView
     {
-        try
+
+        // Método recursivo para agregar los nodos de un documento XML a un objeto TreeView
+        public static void AddXmlNodesToTreeView(XmlNode xmlNode, TreeNodeCollection treeNodes, XMLManager xmlManager)
         {
-            // Crea un nuevo documento XML
-            XmlDocument xmlDoc = new XmlDocument();
-            // Carga el XML desde el archivo
-            xmlDoc.Load(xmlFilePath);
-
-            // Borra todos los nodos existentes en el TreeView
-            treeView.Nodes.Clear();
-
-            // Agrega el nodo raíz al TreeView
-            TreeNode rootNode = new TreeNode(xmlDoc.DocumentElement.Name);
-            treeView.Nodes.Add(rootNode);
-
-            // Recorre los elementos hijos del nodo raíz
-            foreach (XmlNode childNode in xmlDoc.DocumentElement.ChildNodes)
+            foreach (XmlNode childNode in xmlNode.ChildNodes)
             {
-                // Agrega los nodos hijos al nodo raíz del TreeView
-                AddNodeToTreeView(childNode, rootNode);
-            }
+                TreeNode newNode;
 
-            // Expande el nodo raíz del TreeView
-            rootNode.Expand();
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show("Error al cargar el XML: " + ex.Message);
+                if (childNode.NodeType == XmlNodeType.Element)
+                {
+                    // Si el nodo es un elemento XML, crea un nuevo TreeNode con el nombre del nodo y el InnerText
+                    newNode = new TreeNode(childNode.Name);
+                }
+                else if (childNode.NodeType == XmlNodeType.Text)
+                {
+                    // Si el nodo es un nodo de texto, crea un nuevo TreeNode con el valor del texto
+                    newNode = new TreeNode(childNode.InnerText);
+                }
+                else
+                {
+                    // Si el nodo no es un elemento ni un nodo de texto, crea un nuevo TreeNode con el nombre del nodo
+                    newNode = new TreeNode(childNode.Name);
+                }
+
+                // Guardamos si es un array.
+                newNode.Tag = xmlManager.IsArrayElement(childNode.Name);
+
+                treeNodes.Add(newNode);
+
+                // Llama recursivamente al método para agregar los nodos hijos del nodo actual
+                AddXmlNodesToTreeView(childNode, newNode.Nodes, xmlManager);
+            }
         }
     }
 
-    private static void AddNodeToTreeView(XmlNode xmlNode, TreeNode treeNode)
-    {
-        // Crea un nuevo nodo en el TreeView para el nodo XML actual
-        TreeNode newNode = new TreeNode(xmlNode.Name);
-        treeNode.Nodes.Add(newNode);
-
-        // Agrega los atributos del nodo XML como nodos secundarios
-        if (xmlNode.Attributes != null)
-        {
-            foreach (XmlAttribute attribute in xmlNode.Attributes)
-            {
-                TreeNode attributeNode = new TreeNode(attribute.Name + ": " + attribute.Value);
-                newNode.Nodes.Add(attributeNode);
-            }
-        }
-
-        // Recorre los elementos hijos del nodo XML actual
-        foreach (XmlNode childNode in xmlNode.ChildNodes)
-        {
-            // Agrega los nodos hijos al nodo actual del TreeView
-            AddNodeToTreeView(childNode, newNode);
-        }
-    }
 }
-
